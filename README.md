@@ -1,7 +1,5 @@
 # Imagify
 
-![Imagify Logo](frontend/assets/logo.svg)
-
 ## Overview
 Imagify is a **SaaS-based image generation and enhancement application** that utilizes **ClipDrop API** for AI-powered image generation. It features **secure authentication with JWT, seamless payment integration with Razorpay, and a responsive UI built with React.js and Tailwind CSS.**
 
@@ -110,7 +108,7 @@ npm install
 ### **3. Set up environment variables**
 Create a `.env` file in the **backend** directory and add:
 ```
-PORT=5000
+PORT=4000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 CLIPDROP_API_KEY=your_clipdrop_api_key
@@ -141,24 +139,28 @@ npm run dev
 - `POST /api/images/generate` - Generate an image using ClipDrop API
 
 ### **Transactions & Payments**
-- `POST /api/payments/create-order` - Create an order for Razorpay
-- `POST /api/payments/verify` - Verify payment & update credits
+- `POST /api/user/razor-pay` - Create an order for Razorpay
+- `POST /api/user/verify-razorpay` - Verify payment & update credits
 
 ---
 
 ## Screenshots
 ### **Home Page**
-![Home Page](frontend/assets/sample_img_1.png)
+![image](https://github.com/user-attachments/assets/58291299-a498-42bc-83df-602c5d0882f7)
+
+### **Login Page**
+![image](https://github.com/user-attachments/assets/c8da9d0b-3ccd-4730-a79c-0c2696867756)
+
 
 ### **Image Generation Page**
-![Image Generation](frontend/assets/sample_img_2.png)
+![image](https://github.com/user-attachments/assets/22cab7a0-51bb-4a3e-9e46-797ee7a193a3)
+
+### **BuyCredits Page**
+![image](https://github.com/user-attachments/assets/c1ded457-fe0f-4f45-8769-cc9c4a5fcc5e)
 
 ---
 
-## Contributors
-- **[Your Name]** - Full Stack Developer
 
----
 
 ## License
 This project is licensed under the **MIT License**.
